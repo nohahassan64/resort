@@ -9,19 +9,19 @@ export const BannerSec = styled.div`
     letter-spacing: 3px;
     border-radius: 5px;
     @media screen and (min-width: 576px) {
-      padding: 2rem 3rem;
+      padding: 2rem;
     }
     @media screen and (min-width: 992px) {
-      padding: 2rem 6rem;
+      padding: 2rem 4rem;
     }
      h1 {
-    font-size: 2.5rem;
-    line-height: 1;
+    font-size: 2rem;
+    text-transform: capitalize;
     @media screen and (min-width: 576px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     @media screen and (min-width: 992px) {
-        font-size: 4rem;
+        font-size: 3rem;
     }
   }
    .line {
@@ -32,5 +32,6 @@ export const BannerSec = styled.div`
   }
    p {
     font-size: 1.2rem;
+    margin-bottom: 0;
   }
 `;

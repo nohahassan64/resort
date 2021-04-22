@@ -31,7 +31,7 @@ export default class SingleRoom extends Component {
             <>
                 <HeroSection img={ mainImage || this.state.ImageDefault }>
                     <Banner title={`${name} room`}>
-                        <Button to="/rooms" primary="true">Back To Rooms</Button>
+                        <Button to="/rooms">Back To Rooms</Button>
                     </Banner>
                 </HeroSection>
                 <SingleRoomSec>

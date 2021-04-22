@@ -7,13 +7,15 @@ const Navbar = () => {
 
     const [isOpen , setIsOpen ] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
+    const closeMobileMenu = () => setIsOpen(false);
+
 
     return (
         <>
             <Nav>
                 <NavCenter>
                     <NavHeader>
-                        <Link to="/">
+                        <Link to="/resort">
                             Beach <span>Resort</span>
                         </Link>
                         <button
@@ -24,9 +26,9 @@ const Navbar = () => {
                                 <FaAlignRight className="nav-icon" />
                             </button>
                     </NavHeader>
-                    <NavLinks isOpen={isOpen}>
+                    <NavLinks isOpen={isOpen} onClick={closeMobileMenu}>
                         <li>
-                            <Link to="/" >Home</Link>
+                            <Link to="/resort" >Home</Link>
                         </li>
                         <li>
                             <Link to="/rooms" >Rooms</Link>

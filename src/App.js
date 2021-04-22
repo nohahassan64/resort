@@ -6,6 +6,7 @@ import SingleRoom from './pages/SingleRooms.js/SingleRoom'
 import Error from './pages/Error'
 import Navbar from './components/Navbar/Navbar'
 import { GlobalStyle } from './globalStyle'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   return (
@@ -13,12 +14,13 @@ const App = () => {
       <BrowserRouter>
         <div>
           <GlobalStyle />
+          <ScrollToTop />
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/resort" component={Home} />
             <Route exact path="/rooms" component={Rooms} />
             <Route exact path="/rooms/:slug" component={SingleRoom} />
-            <Route component={Error} />
+            <Route exact component={Error} />
           </Switch>
         </div>
       </BrowserRouter>

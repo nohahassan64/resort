@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 export const RoomBox = styled.div`
@@ -13,26 +14,17 @@ export const ImgContainer = styled.div`
     &:hover {
         background: rgba(0, 0, 0, 0.8);
     }
-     img {
+
+`; 
+
+export const Image = styled.img`
     width: 100%;
     display: block;
     transition: all .3s ease-in-out;
-    &:hover{
-        opacity: 0.3;
+  ${ImgContainer}:hover &  {
+    opacity: 0.3;
     }
-  }
-  .room-link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: scale(.5);
-    transition: all 0.3s linear;
-    &:hover{
-        transform: translate(-50%, -50%) scale(1);
-    }
-  }
-
-`; 
+`;
 export const Price = styled.div`
    position: absolute;
     top: 0;
@@ -54,10 +46,32 @@ export const Price = styled.div`
     letter-spacing: 3px;
   }
 `; 
+export const RoomLink = styled(Link)`
+  display: inline-block;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fff;
+    background: #c6610f;
+    padding: 0.4rem 0.9rem;
+    border: 2px solid #c6610f;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    &:hover {
+        background: transparent;
+    }
+  ${ImgContainer}:hover &  {
+    transform: translate(-50%, -50%) scale(1);
+    }
+`;
 export const RoomInfo = styled.p`
- background: #cfcfcf;
+    background: #cfcfcf;
     text-transform: capitalize;
-    padding: 0.5rem 0;
+    padding: 1rem;
     text-align: center;
     font-weight: 700;
     letter-spacing: 3px;

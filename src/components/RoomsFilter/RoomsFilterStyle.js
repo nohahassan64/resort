@@ -10,10 +10,10 @@ export const FilterContainer = styled.div`
     }
 `;
 export const Form = styled.form`
-    width: 60vw;
-    margin: 0 auto;
+    width: 80vw;
+    margin: 4rem auto 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-row-gap: 2rem;
     grid-column-gap: 40px;
   

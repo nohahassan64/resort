@@ -46,6 +46,7 @@ export const NavHeader = styled.div`
   .nav-icon {
     font-size: 1.5rem;
     color: #C6610F;
+    margin-right: .5rem;
   }
 `;
 export const NavLinks = styled.div`
@@ -75,6 +76,6 @@ export const NavLinks = styled.div`
       padding: 0.5rem 0;    }
   }
    a:hover {
-    color: var(--primaryColor);
+    color: #C6610F ;
   }
 `;

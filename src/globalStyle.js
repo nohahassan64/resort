@@ -43,64 +43,25 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 1.5em;
   }
   
-`
-export const Section = styled.div`
-    padding: 4rem 0 ;
-`;
-export const Container = styled.div`
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-
-@media screen and (max-width: 991px) {
-    padding-left: 30px;
-    padding-right: 30px;
-    }
-`;
-export const SecRow = styled.div`
-    margin: 0 -15px -15px -15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-`;
-export const SecColumn = styled.div`
-    margin-bottom: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    flex: 1;
-    max-width: 50%;
-    flex-basis: 50%;
-@media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    flex-basis: 100%;
-    }
 `;
 export const Button = styled(Link)`
     display: inline-flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    background: ${({primary}) => ( primary ? '#C6610F' : 'transparent')};
-    border: ${({primary}) => ( primary ? '2px solid #C6610F' : '2px solid #C6610F')};
+    background: #C6610F;
+    border: 2px solid #C6610F;
     color: #fff;
-    max-width: 200px;
     padding: .7rem 1.2rem;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     transition: all .5s ease-in-out;
-    font-size: 2rem;
+    font-size: 1.5rem;
     
-
     &:hover {
-        background: ${({primary}) => ( primary ? 'transparent' : '#C6610F')};
-        border: ${({primary}) => ( primary ? '2px solid #C6610F' : '2px solid #C6610F')};
+        background: transparent;
+        border: 2px solid #C6610F
     }
     
 `;
