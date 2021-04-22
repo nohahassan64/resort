@@ -3,7 +3,7 @@ import Banner from '../../components/Banner/Banner';
 import { RoomContext } from '../../context';
 import { Button, HeroSection } from '../../globalStyle';
 import ImageDefault from '../../images/rooms/01.jpg'
-import { SingleRoomSec , RoomImages } from './SingleRoomStyle'
+import { SingleRoomSec , RoomImages , RoomInfo , Desc , Info , RoomExtras , UlExtras } from './SingleRoomStyle'
 
 export default class SingleRoom extends Component {
     constructor(props) {
@@ -42,7 +42,31 @@ export default class SingleRoom extends Component {
                             )
                         })}
                     </RoomImages>
+                    <RoomInfo>
+                        <Desc>
+                            <h3>Details</h3>
+                            <p>{description}</p>
+                        </Desc>
+                        <Info>
+                            <h3>Info</h3>
+                            <h6>Price : ${price}</h6>
+                            <h6>Size : ${size} SQFT</h6>
+                            <h6>
+                                Max Capacity : { capacity > 1 ? `${capacity} People` : `${capacity} Person`}
+                            </h6>
+                            <h6>{pets? "Pets Allowed" : "No Pets Allowed"}</h6>
+                            <h6>{breakfast && "Free Breakfast Included"}</h6>
+                        </Info>
+                    </RoomInfo>
                 </SingleRoomSec>
+                <RoomExtras>
+                    <h6>Extras</h6>
+                    <UlExtras>
+                        {extras.map( (item , index) => {
+                            return <li key={index}>- {item}</li>
+                        })}
+                    </UlExtras>
+                </RoomExtras>
             </>
         )
     }
