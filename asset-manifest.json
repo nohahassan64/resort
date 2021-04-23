@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/resort/static/js/main.b346c734.chunk.js",
-    "main.js.map": "/resort/static/js/main.b346c734.chunk.js.map",
+    "main.js": "/resort/static/js/main.bc8f5624.chunk.js",
+    "main.js.map": "/resort/static/js/main.bc8f5624.chunk.js.map",
     "runtime-main.js": "/resort/static/js/runtime-main.6232b053.js",
     "runtime-main.js.map": "/resort/static/js/runtime-main.6232b053.js.map",
     "static/js/2.93ff522b.chunk.js": "/resort/static/js/2.93ff522b.chunk.js",
@@ -30,6 +30,6 @@
   "entrypoints": [
     "static/js/runtime-main.6232b053.js",
     "static/js/2.93ff522b.chunk.js",
-    "static/js/main.b346c734.chunk.js"
+    "static/js/main.bc8f5624.chunk.js"
   ]
 }
