@@ -13,7 +13,7 @@ export const Form = styled.form`
     width: 80vw;
     margin: 4rem auto 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-row-gap: 2rem;
     grid-column-gap: 40px;
   
