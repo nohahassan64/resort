@@ -28,7 +28,7 @@ const Navbar = () => {
                     </NavHeader>
                     <NavLinks isOpen={isOpen} onClick={closeMobileMenu}>
                         <li>
-                            <Link to="/resort" >Home</Link>
+                            <Link to="/" >Home</Link>
                         </li>
                         <li>
                             <Link to="/rooms" >Rooms</Link>
